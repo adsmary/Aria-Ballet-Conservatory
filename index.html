@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR" class="locked">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <title>Aria Ballet Conservatory</title>
+  <meta name="description" content="Classical ballet, taught with patience and precision.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400&family=Jost:wght@300;400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="progress" aria-hidden="true"></div>
+  <div class="cursor" aria-hidden="true"><span class="cursor__dot"></span><span class="cursor__ring"><i></i></span></div>
+
+  <!-- INTRO -->
+  <div class="intro" id="intro">
+    <div class="intro__bg"><img src="imagens/intro.jpg" alt="" fetchpriority="high"></div>
+    <div class="intro__shade"></div>
+    <p class="intro__logo">Aria</p>
+    <p class="intro__count" id="count">000</p>
+    <button class="btn intro__btn" id="enter" type="button" data-magnetic>Enter</button>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a class="header__logo" href="#top" aria-label="Aria Ballet Conservatory, home">Aria</a>
+    <nav class="header__nav" aria-label="Main">
+      <a class="link" href="#about">About</a>
+      <a class="link" href="#classes">Classes</a>
+      <a class="link" href="#contact">Contact</a>
+      <a class="btn btn--sm" data-magnetic href="#contact">Book a Trial Class</a>
+    </nav>
+  </header>
+
+  <main>
+    <!-- HERO -->
+    <section class="hero" id="top" aria-labelledby="hero-title">
+      <div class="hero__media"><div class="hero__img"><img fetchpriority="high" src="imagens/hero.jpg" alt="A ballerina in a tutu, caught mid-turn on a dark stage"></div></div>
+      <div class="hero__shade"></div>
+      <div class="hero__content">
+        <h1 id="hero-title">Aria Ballet Conservatory</h1>
+        <p class="hero__sub">Classical ballet for children, youth and adults.</p>
+        <a class="btn" data-magnetic href="#contact">Book a Trial Class</a>
+      </div>
+      <p class="hero__scroll" aria-hidden="true"><span>Scroll</span><i></i></p>
+    </section>
+
+    <!-- MARQUEE -->
+    <div class="marquee" aria-hidden="true">
+      <div class="marquee__row"><div class="marquee__track"><div class="marquee__group"><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span></div><div class="marquee__group"><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span></div></div></div>
+      <div class="marquee__row marquee__row--rev"><div class="marquee__track"><div class="marquee__group"><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span></div><div class="marquee__group"><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span><span>Technique</span><span>Grace</span><span>Discipline</span><span>Performance</span></div></div></div>
+    </div>
+
+    <!-- ABOUT -->
+    <section class="section about" id="about" aria-labelledby="about-title">
+      <p class="eyebrow" data-fade>About the conservatory</p>
+      <h2 id="about-title" class="statement" data-illuminate>Classical ballet, taught with patience and precision.</h2>
+      <div class="about__grid">
+        <div class="about__text">
+          <p data-fade>Founded in 2009, Aria trains dancers from their first plié to the professional stage. Our classes are small, our teachers are former company dancers, and our method is the classical one: technique first, expression always.</p>
+          <p data-fade>Whether you arrive at five or at fifty, you will find the same studio, the same discipline and the same warmth.</p>
+          <a class="btn" data-magnetic data-fade href="#classes">Explore classes</a>
+        </div>
+        <figure class="frame reveal-img zoom" data-cursor="Teachers">
+          <div class="im"><img decoding="async" loading="lazy" src="imagens/about.jpg" alt="A teacher guiding a student through an extension at the barre" width="1568" height="2352"></div>
+        </figure>
+      </div>
+    </section>
+
+    <!-- BENTO -->
+    <section class="section bento-wrap" aria-labelledby="bento-title">
+      <h2 id="bento-title" data-text="chars">The Aria way.</h2>
+      <div class="bento">
+        <article class="tile tile--a" data-tilt data-fade><strong>12</strong><p>Students per class, so every dancer is seen and corrected.</p></article>
+        <article class="tile tile--b" data-tilt data-fade><strong>All levels</strong><p>Taught by former company dancers, from the first plié to pointe.</p></article>
+        <article class="tile tile--c" data-tilt data-fade><strong>2</strong><p>Stage performances a year.</p></article>
+        <article class="tile tile--d" data-tilt data-fade><strong>Ages 4 and up</strong><p>One school, one method, every generation.</p></article>
+        <article class="tile tile--e" data-tilt data-fade><strong>2009</strong><p>Our year of founding.</p></article>
+      </div>
+    </section>
+
+    <!-- CLASSES -->
+    <section class="hscroll" id="classes" aria-labelledby="classes-title">
+      <div class="hscroll__track">
+        <div class="hscroll__intro">
+          <p class="eyebrow" data-fade>Classes</p>
+          <h2 id="classes-title" data-text="chars">A place for every dancer.</h2>
+          <p data-fade>From a child’s first steps to an adult’s first plié, every program follows the same classical syllabus, taught in small groups by former company dancers.</p>
+          <p data-fade>Choose the class that fits your age and your goals. Your first lesson is a free trial.</p>
+        </div>
+
+        <a class="hcard c-junior zoom" data-tilt data-cursor="Explore" href="#contact">
+          <img src="imagens/imagens bailarinas 1.jpg" alt="Two dancers in arabesque at the barre" width="1568" height="2352" loading="lazy">
+          <div class="hcard__text"><span>Ages 8–17</span><h3>Junior Conservatory</h3><p>Structured technique, pointe preparation and yearly performances.</p></div>
+        </a>
+
+        <a class="hcard c-swans zoom" data-tilt data-cursor="Explore" href="#contact">
+          <img src="imagens/imagens bailarinas 2.jpg" alt="A young student at the barre looking over her shoulder" width="1568" height="2352" loading="lazy">
+          <div class="hcard__text"><span>Ages 4–7</span><h3>Little Swans</h3><p>Music, posture and play. The first steps toward discipline.</p></div>
+        </a>
+        <div class="cdetail d-swans" data-fade>
+          <p class="eyebrow">Little Swans · Ages 4–7</p>
+          <h3>Where every dancer begins.</h3>
+          <p>Our youngest dancers learn through music, story and movement. Each class builds posture, balance and a love for the studio, with gentle corrections and plenty of imagination.</p>
+          <dl>
+            <div><dt>Duration</dt><dd>45 minutes</dd></div>
+            <div><dt>Class size</dt><dd>Up to 12 children</dd></div>
+            <div><dt>Schedule</dt><dd>Tue and Thu, 4 pm</dd></div>
+            <div><dt>First term</dt><dd>Posture, rhythm, first positions</dd></div>
+            <div><dt>Year end</dt><dd>A short recital for families</dd></div>
+          </dl>
+          <a class="link" href="#contact">Book a trial class</a>
+        </div>
+
+        <a class="hcard c-adult zoom" data-tilt data-cursor="Explore" href="#contact">
+          <img src="imagens/imagem ballet adulto.jpg" alt="An adult dancer practising at the barre" width="1568" height="2352" loading="lazy">
+          <div class="hcard__text"><span>Ages 18+</span><h3>Adult Ballet</h3><p>Barre, centre and adagio for beginners and returning dancers.</p></div>
+        </a>
+        <div class="cdetail d-adult" data-fade>
+          <p class="eyebrow">Adult Ballet · Ages 18+</p>
+          <h3>It is never too late.</h3>
+          <p>Beginners and returning dancers share the same barre. We work at a calm pace, with clear corrections and live piano that makes the effort feel like a pleasure.</p>
+          <dl>
+            <div><dt>Duration</dt><dd>60 minutes</dd></div>
+            <div><dt>Level</dt><dd>Beginner to advanced</dd></div>
+            <div><dt>Schedule</dt><dd>Mon and Wed, 7 pm</dd></div>
+            <div><dt>Structure</dt><dd>Barre, centre and adagio</dd></div>
+            <div><dt>First class</dt><dd>Free trial</dd></div>
+          </dl>
+          <a class="link" href="#contact">Book a trial class</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUOTE -->
+    <section class="quote" aria-label="Our philosophy">
+      <div class="quote__media"><img src="imagens/imagen final do site.jpg" alt="" loading="lazy"></div>
+      <blockquote>
+        <p data-illuminate>“We teach the step first, and then we teach the listening.”</p>
+        <cite data-fade>Elena Marchetti, Artistic Director</cite>
+      </blockquote>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="footer" id="contact">
+    <h2 class="footer__cta" data-text="chars">Let’s dance.</h2>
+    <a class="btn" data-magnetic href="mailto:hello@ariaballet.example">Book a Trial Class</a>
+    <div class="footer__grid">
+      <p class="footer__word" aria-hidden="true" data-spot>Aria</p>
+      <nav aria-label="Footer">
+        <a class="link" href="#about">About</a>
+        <a class="link" href="#classes">Classes</a>
+        <a class="link" href="#top">Back to top</a>
+      </nav>
+      <address>
+        <p>120 Rue de la Danse</p>
+        <a class="link" href="mailto:hello@ariaballet.example">hello@ariaballet.example</a>
+      </address>
+    </div>
+    <p class="footer__copy">© 2026 Aria Ballet Conservatory. All rights reserved.</p>
+  </footer>
+
+  <!-- Bibliotecas (ordem importa) -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.18/dist/lenis.min.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
